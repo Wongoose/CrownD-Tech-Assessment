@@ -7,6 +7,6 @@
 
 </br>
 
-**Allowed language:** Dart
+**Allowed language:** Dart, Java, C#, C++
 
-**Allowed files:** ```main.dart``` only
+**Allowed files:** ```main.dart or */*``` only
