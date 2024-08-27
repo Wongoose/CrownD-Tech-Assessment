@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'products.dart';
 
 void main() {
   runApp(const MainApp());
@@ -14,11 +15,10 @@ class MainApp extends StatelessWidget {
         body: Column(children: [
           Text("BEST SELLERS"),
           // ADD YOUR CODE HERE FOR PRODUCT LIST
-          Container(
-            
-          )
+          ProductList()
         ]),
       ),
     );
   }
 }
+

@@ -1,0 +1,22 @@
+void main() {
+    AddOn caramel = AddOn('Caramel', 0.50);
+    //all other addons declared here
+
+    Coffee espresso = Coffee('Espresso', 2.00, [caramel]);
+    //all other coffees declared here
+
+    CartItem p1 = CartItem(espresso, {caramel:2,}, 2);
+    //all other cart items declared here
+
+    //Adding cart Items here
+    Cart cart = Cart();
+    cart.addItem(p1);
+
+    //Increase caramel add-on here
+    p1.addOns[caramel] = p1.addOns[caramel]! +3;
+
+    //Calculate total price
+    double totalPrice = cart.getTotalPrice();
+
+    print('Total Price: \$${totalPrice.toStringAsFixed(2)}');
+}

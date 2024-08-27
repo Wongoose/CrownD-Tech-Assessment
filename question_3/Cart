@@ -1,0 +1,11 @@
+class Cart {
+    List <CartItem> items = [];
+
+    void addItem(CartItem item) {
+        items.add(item);
+    }
+
+    double getTotalPrice() {
+        return items.map((item) => item.getItemTotal()).reduce((value, element) => value + element);
+    }
+}

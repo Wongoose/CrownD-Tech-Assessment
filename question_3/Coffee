@@ -1,0 +1,7 @@
+class Coffee {
+    String name;
+    double basePrice;
+    List<AddOn> availableAddOns;
+
+    Coffee(this.name, this.basePrice, this.availableAddOns);
+}

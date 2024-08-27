@@ -1,0 +1,15 @@
+class CartItem{
+    Coffee coffee;
+    Map<AddOn, int> addOns;
+    int quantity;
+
+    CartItem(this.coffee, this.addOns, this.quantity);
+
+    double getItemTotal() {
+        double addOnTotal = addOn.entries
+        .map((entry) => entry.key.procePerPack*entry.value)
+        .reduce((value, element) => value+element);
+
+        return (coffee.basePrice + addOnTotal) * quantity;
+    }
+}

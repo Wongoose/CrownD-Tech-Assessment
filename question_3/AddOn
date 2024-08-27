@@ -1,0 +1,6 @@
+class AddOn {
+    String name;
+    double pricePerPack;
+
+    AddOn(this.name, this.pricePerPack);
+}
